@@ -1,5 +1,19 @@
 # pip freeze for pyproject.toml
 
+Install something with a requirements.txt? Have stuff you've installed with pip, but haven't saved the dependencies yet?
+
+Need it to be in a versioned pyproject.toml instead?
+
+Well, you're in luck, sort of. 
+
+This cli does the bare minimum in locking your packages and versions into starter pyproject.toml similar to `pip freeze` but for pyproject.toml
+
+# install
+
+```
+pip install pyproject-freeze==0.1.0
+```
+
 # Usage
 
 ```
@@ -9,7 +23,7 @@ source venv_3126/bin/activate
 pip install tomlkit
 
 # now we "freeze" into a pyproject.toml
-python freeze.py 
+pypfreeze
 
 Enter the path for pyproject.toml (default: pyproject.toml): 
 Choose package manager (p)ip, (po)etry, (u)v, or (r)ye (default: p): p
