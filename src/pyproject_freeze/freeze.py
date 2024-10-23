@@ -108,6 +108,10 @@ def update_pyproject_toml(file_path):
     
     print(f"Updated {file_path} with user-provided information and selected packages.")
 
-if __name__ == "__main__":
+def run():
     file_path = Path(get_user_input("Enter the path for pyproject.toml", "pyproject.toml"))
     update_pyproject_toml(file_path)
+
+
+if __name__ == "__main__":
+    run()
